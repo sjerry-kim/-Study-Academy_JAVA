@@ -1,0 +1,39 @@
+package pratice04;
+
+public class Game {
+	
+	
+	
+	
+	
+	/* 내가 작성한 코드
+	// 필드
+	protected String gameTitle;
+	
+	// 생성자
+	public Game() {
+		gameTitle = "미정";
+	}
+	
+	public Game(String gameTitle) {
+		this.gameTitle = gameTitle;
+	}
+	
+	// 메소드
+	public String getGameTitle() { // 게임타이틀을 들고온다
+		return this.gameTitle;
+	}
+	
+	public void play() {
+		System.out.println(gameTitle + "게임을 시작합니다");
+	}
+	
+	public void stop() {
+		System.out.println(gameTitle +"게임을 멈춥니다");
+	}
+	
+	public void end() {
+		System.out.println(gameTitle +"게임을 종료합니다");
+	}
+	*/
+}

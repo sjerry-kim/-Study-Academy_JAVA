@@ -1,0 +1,19 @@
+package chap09_interface;
+
+public class Student implements Comparable{
+	// 필드
+	private String name;
+	private int grade;
+
+	@Override
+	public int compareTo(Object otherObject) {
+		// 비교하는 메소드임 : Student 객체를 받아와서 그 객체안의 grade를 비교하는 메소드
+		return 0;
+	}
+	
+	public Student(String name, int grade) {
+		this.name = name;
+		this.grade = grade;
+	}
+
+}

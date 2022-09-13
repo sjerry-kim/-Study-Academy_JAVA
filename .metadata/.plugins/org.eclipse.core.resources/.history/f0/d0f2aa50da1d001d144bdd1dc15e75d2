@@ -1,0 +1,8 @@
+package chapter08_abstract;
+
+public abstract class Animal {
+	private String name;
+	private int month;
+	
+	public void move() {};
+}

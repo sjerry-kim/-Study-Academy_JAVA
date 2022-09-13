@@ -1,0 +1,14 @@
+package pratice04;
+
+public class Game {
+	private String gameTitle;
+	
+	public Game() {
+		gameTitle = "미정";
+	}
+	
+	public Game(String gameTitle) {
+		this.gameTitle = gameTitle;
+	}
+
+}

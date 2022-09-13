@@ -1,0 +1,19 @@
+package chapter08_abstract;
+// 2022.08.17.(수)
+public class Rectangle extends Shape {
+	
+	public void pirnt(String word) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void draw() {
+		System.out.println("사각형을 그립니다");
+	}
+	
+	public void print(String word) {
+		System.out.println("사각형에서 출력 : " + word);
+	}
+	
+
+}

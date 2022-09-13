@@ -1,0 +1,21 @@
+package chapter08_polymo;
+
+public class PolymoTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 2022.08.17.(수)
+		// 타이변환 : 다른 데이터 타입으로 변환하는 행위
+		// 클래스의 경우 : 자식타입은 부모타입으로 자동변환이 가능하다
+		// car : SportsCar의 부모클래스
+		// SportsCar : Car의 자식클래스
+		// 변수의 데이터 타입은 부모클래스이지만, 안에 객체는 자식클래스가 들어감
+		Car myCar = new SportsCar();
+		// 부모클래스로 자동으로 타입변환를 해줄경우 부모의 필드/메소드는 사용가능
+		// 부모클래스로 타입변환이 되었기 때문에 sportsCar의 필드/메소드는 사용불가능
+		System.out.println(myCar.color);
+		System.out.println(myCar.speedUp(10));
+
+	}
+
+}

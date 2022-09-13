@@ -1,0 +1,18 @@
+package chap10_exception;
+// 2022.08.18.(목)
+// 숫자 2개를 받아와서 나누는 클래스
+public class MethodThrow {
+	// 필드
+	private int x,y;
+	
+	// 생성자
+	public MethodThrow() {
+		x = 1;
+		y = 1;
+	}
+	
+	public MethodThrow(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+}

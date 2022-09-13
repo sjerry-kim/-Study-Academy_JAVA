@@ -1,0 +1,12 @@
+package pratice04;
+
+public class BoardGame extends Game{
+	// 필드
+	private int peopleNum;
+	
+	// 생성자
+	public BoardGame() {
+		int pepleNum = 0;
+	}
+
+}

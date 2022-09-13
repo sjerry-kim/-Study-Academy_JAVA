@@ -1,0 +1,15 @@
+package chapter08_abstract;
+
+// 2022.08.17.(수)
+// abstract을 통해서 추상클래스 선언
+public abstract class shape {
+	// 필드값 사용 가능
+	private int x, y;
+	
+	// 일반 메소드 선언
+	public void move(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
+}

@@ -1,0 +1,12 @@
+package chap09_interface;
+//2022.08.17.(수)
+public class Taxi extends Car implements CarInterface {
+
+	@Override
+	public void printCar() { // 메소드의 이름만 받아옴
+		// TODO Auto-generated method stub
+		System.out.println("인터페이스의 내용을 Taxi에서 구현했습니다");
+		
+	}
+
+}

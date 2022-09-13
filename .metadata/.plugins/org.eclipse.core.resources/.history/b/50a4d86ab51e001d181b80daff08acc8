@@ -1,0 +1,30 @@
+package chap10_exception;
+
+public class ExceptionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 예외 처리
+		// 프로그램은 예외가 발생했을 때 그 코드에서 멈춘다
+		// 코드가 멈추는 것을 막기 위해 사용하는 것이 예외처리
+		// try/catch 구무을 사용하여 예외를 처리한다
+		
+		int x = 6;
+		int y = 0;
+		
+		System.out.println("내용확인");
+		try {
+			// 오류/예외가 일어날 가넝성이 있는 코드를 try에 넣어준다
+			int result = x/y;
+		}catch(Exception e) { 
+			//Exception 클래스의 매개변수를 통해서 오류를 받아옴
+			System.out.println("오류 발생");
+		}
+		System.out.println("결과 : " + result);
+		
+		
+		
+
+	}
+
+}

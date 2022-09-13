@@ -1,0 +1,6 @@
+package chap09_interface;
+
+public interface CarOptionInterface extends CarInterface {
+	public void carDrive();
+
+}

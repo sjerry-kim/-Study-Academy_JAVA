@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="chap07_1AccessB.AccessB"/>
+    <fullyQualifiedTypeName name="chap07_2getset.AnimalCard"/>
+    <fullyQualifiedTypeName name="java.util.spi.CalendarDataProvider"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="chap08_inherit.Worker"/>
+    <fullyQualifiedTypeName name="chap09_interface.CarInterface"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+</qualifiedTypeNameHistroy>

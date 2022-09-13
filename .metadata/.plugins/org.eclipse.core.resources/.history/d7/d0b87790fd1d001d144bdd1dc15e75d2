@@ -1,0 +1,11 @@
+package chap09_interface;
+
+public class Student implements Comparable{
+
+	@Override
+	public int compareTo(Object otherObject) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,67 @@
+package pratice04;
+
+public class Book {
+	// 필드
+	private String title;
+	private String author;
+	private int page;
+	private boolean checkOut;
+	
+	// 정적필드
+	public static int bookCount = 0;
+	
+	// 정적메소드
+	public static int getBookCount() {
+		return bookCount;
+	}
+	
+	// 생성자
+	public Book() {
+		title = "미정";
+		author = "미상";
+		page = 0;
+		checkOut = false;
+		
+		bookCount++;
+	}
+	
+	public Book(String title, String author, int page) {
+		this.title = title;
+		this.author  = author;
+		this.page = page;
+		
+		bookCount++;
+	}
+	
+	public Book( boolean checkOut) {
+		this.checkOut = checkOut;
+		checkOut = false;
+		
+		bookCount++;
+	}
+	
+	// 메소드
+	public boolean getCheckOut() {
+		return checkOut;
+	}
+	
+	public void isCheckOut() {
+		if(!checkOut) {
+			checkOut = false;
+			System.out.println("책을 대여하였습니다");
+		}else {
+			checkOut = true;
+			System.out.println("책을 반납하였습니다");
+		}
+	}
+	
+	public void printBook() {
+		if(checkOut) {
+			System.out.println(author+"의 " + title + "책이 현재 있습니다");
+		}else {
+			System.out.println(author+"의 " + title + "책이 대여중입니다");
+		}
+	}
+	
+	
+}

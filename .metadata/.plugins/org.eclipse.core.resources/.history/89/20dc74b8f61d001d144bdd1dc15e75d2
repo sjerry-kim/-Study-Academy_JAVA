@@ -1,0 +1,11 @@
+package chap09_interface;
+//2022.08.17.(수)
+public class Taxi implements CarInterface {
+
+	@Override
+	public void printCar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package chapter08_abstract;
+
+public class AbstractTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 2022.08.17.(수)
+
+	}
+
+}

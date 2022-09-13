@@ -1,0 +1,6 @@
+package chap10_exception;
+//2022.08.18.(목)
+public class MyException extends Exception {
+	
+
+}

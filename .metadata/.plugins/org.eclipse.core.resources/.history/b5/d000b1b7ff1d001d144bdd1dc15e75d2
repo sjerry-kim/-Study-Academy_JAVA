@@ -1,0 +1,9 @@
+package chap09_interface;
+
+public interface Comparable {
+	// 추상메소드
+	// Object는 모든 클래스의 수퍼클래스이므로 모든 객체가 다 들어갈 수 있다
+	
+	public int compareTo(Object otherObject);
+
+}

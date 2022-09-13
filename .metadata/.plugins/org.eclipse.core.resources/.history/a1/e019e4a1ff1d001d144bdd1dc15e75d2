@@ -1,0 +1,6 @@
+package chap09_interface;
+
+public interface Comparable {
+	public int compareTo(Object otherObject);
+
+}

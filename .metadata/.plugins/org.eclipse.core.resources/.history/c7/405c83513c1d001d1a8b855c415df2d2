@@ -1,0 +1,9 @@
+package chap08_inheritAnimal;
+
+public class AnimalCardNew extends AnimalCard{
+	// 필드
+	private String personName;
+	
+	
+
+}

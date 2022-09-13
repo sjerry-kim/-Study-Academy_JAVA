@@ -1,0 +1,95 @@
+package chap09_interface;
+
+public class InterfaceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 2022.08.17.(수)
+		// 인터페이스를 구현하여 작성한 클래스는 서브클래스와 동일하게 쓰인다
+		// 상속과 인터페이스의 차이점 :
+		// 상속은 부모클래스의 필드/메소드를 가져다 쓰고 필요한 부분을 오버라이딩
+		// 인터페이스는 인터페이스의 추상메소드를 오버라이해서 구현하여 사용
+		
+		// 차이점은 상속은 서브클래스에서 부모클래스에 있는 내용을 전부다 가져와서 쓴다면
+		// 인터페이스의 경우는 이름만 들고와서 사용하고 있다는 점이다
+		Truck t1 = new Truck();
+		t1.move();
+		t1.printCar();
+		
+		// 하나의 인터페이스로 여러 클래스의 메소드의 이름을 동일하게 사용해야할 때
+		// 인터페이스 구현을 할대 반드시 오버라이딩을 하기 때문에
+		// 작성할 메소드의 갯구가 동일
+
+		Taxi t2 = new Taxi();
+		t2.move();
+		t2.printCar();
+		
+		DisplayTV tv = new DisplayTV();
+		tv.onDisplay();
+		tv.offDisplay();
+		
+		Student s1 = new Student();
+		Student s2 = new Student("흥부", 1);
+		
+		int check = s1.compareTo(s2);
+		switch(check) {
+		case 1:
+			System.out.println("s1의 학년이 더 높습니다");
+			break;
+		case -1:
+			System.out.println("s1의 학년이 더 낮습니다");
+			break;
+		case 0:
+			System.out.println("s1의 학년과 동일합니다");
+			break;
+		default:
+			System.out.println("잘못된 객체입니다.");
+		}
+		
+		// 2022.08.18.(목)
+		// 익명구현 객체 : 클래스가 없으며, 일회성으로 사용해야할 경우 main에서만 사용 가능하다
+		CarInterface ci = new CarInterface() {
+
+			@Override
+			public void printCar() {
+				// TODO Auto-generated method stub
+				System.out.println("익명클래스의 객체입니다");
+			}
+			
+		}; // 세미콜론 꼭 찍어주기
+		ci.printCar();
+		
+		// 즉석 실습
+		// DisplayInterface를 이용하여 인터페이스 객체를 만드세요(익명객체)
+		// 변수이름은 di : di가 켜졌습니다/ 꺼졌습니다 출력
+		
+		DisplayInterface di = new DisplayInterface() {
+
+			@Override
+			public void onDisplay() {
+				// TODO Auto-generated method stub
+				System.out.println("di가 켜졌습니당");
+			}
+
+			@Override
+			public void offDisplay() {
+				// TODO Auto-generated method stub
+				System.out.println("di가 꺼졌습니당");
+			}
+			
+		};
+		
+		di.onDisplay();
+		di.offDisplay();
+		
+		// 클래스를 상속받고 인터페이스를 구현한 서브클래스
+		Taxi taxi = new Taxi();
+		taxi.setTaxi("red", 10);
+		
+		System.out.println(taxi.getTexiColor());
+		
+		
+		
+	}
+
+}

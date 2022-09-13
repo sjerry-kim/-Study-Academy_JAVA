@@ -1,0 +1,19 @@
+package chap09_interface;
+
+public class Student implements Comparable{
+	
+	private String name;
+	private int grade;
+
+	@Override
+	public int compareTo(Object otherObject) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public Student(String name, int grade) {
+		this.name = name;
+		this.grade = grade;
+	}
+
+}

@@ -1,0 +1,5 @@
+package chap10_exception;
+
+public class GreenException {
+
+}

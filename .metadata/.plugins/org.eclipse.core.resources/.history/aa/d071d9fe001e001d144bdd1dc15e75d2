@@ -1,0 +1,27 @@
+package chap09_interface;
+// 2022.08.17.(수)
+public class Student implements Comparable{
+	// 필드
+	private String name;
+	private int grade;
+
+	@Override
+	public int compareTo(Object otherObject) {
+		// 비교하는 메소드임 : Student 객체를 받아와서 그 객체안의 grade를 비교하는 메소드
+		
+		// 1. otherObject를 instanceof로 객체의 타입을 확인하고
+		//	  객체의 차입이 Student일 대, 그 객체를 student 객체로 형변환한다
+		
+		// 1-1. 객체의 타입이 Student가 아닐 때, 
+		//      'Student객체가 아닙니다'를 출력하고 return
+		
+		// 2. 형변환을 했다면, this 객체의 grade에 접근해서 
+		//    형변환한 otherObject의 grade를 비교
+		
+		// 2-1. 값이 같으면 0을 return하고, 값이 this가 크면 1을 return
+		//      this가 작으면 -1을 return
+		return 0;
+	}
+	
+
+}

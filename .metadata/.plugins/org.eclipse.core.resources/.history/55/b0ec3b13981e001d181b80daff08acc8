@@ -1,0 +1,17 @@
+package chap09_interface;
+// 2022.08.18.(목)
+public class Bus implements CarOptionInterface {
+
+	@Override // CarInterface에 있는 추상 메소드
+	public void printCar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override // CarOptionInterface에서 작성한 추상 메소드
+	public void carDrive() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package pratice04;
+
+public class BoardGame extends Game{
+	
+
+}

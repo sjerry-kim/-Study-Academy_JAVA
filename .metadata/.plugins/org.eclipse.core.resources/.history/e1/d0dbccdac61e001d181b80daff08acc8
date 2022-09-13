@@ -1,0 +1,9 @@
+package chap10_exception;
+// 2022.08.18.(목)
+// 직접 예외객체를 만들기 위해 Exception을 상속받은 클래스 생성
+public class MyException extends Exception {
+	@Override
+	public String toString() {
+	return "사용자 정의 예외입니다";
+	}
+}

@@ -1,0 +1,5 @@
+package chap09_interface;
+
+public interface CarInterface {
+
+}

@@ -1,0 +1,5 @@
+package chap08_inheritAnimal;
+
+public class AnimalCardNew extends AnimalCard{
+
+}
